@@ -1,2 +1,2 @@
 # MyProject
-練習用
+練習用git
