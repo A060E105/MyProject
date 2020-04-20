@@ -3,8 +3,8 @@ WorldInfo {
   basicTimeStep 16
 }
 Viewpoint {
-  orientation -8.984411199628623e-06 -0.9782145894866264 -0.20759628328751747 3.036502508812543
-  position -0.15046835707729475 0.5851975848163505 -1.4122341408386756
+  orientation 0.03677024511255493 -0.9789746299223979 -0.2006405319038673 3.3890218674801287
+  position 0.2556340317340162 0.5738722372890593 -1.3957712067229648
 }
 TexturedBackground {
 }
@@ -21,14 +21,13 @@ Solid {
         roughness 1
         metalness 0
       }
-      geometry Sphere {
-        radius 0.1
+      geometry DEF BALL_GEOMETRY_ Sphere {
+        radius 0.05
+        subdivision 2
       }
     }
   ]
-  boundingObject Sphere {
-    radius 0.1
-  }
+  boundingObject USE BALL_GEOMETRY_
   physics Physics {
   }
 }
